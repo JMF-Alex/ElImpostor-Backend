@@ -14,17 +14,10 @@ const allowedOrigins = [
 
 const corsOptions = {
   origin: function (origin, callback) {
-    if (!origin) return callback(null, true);
-    
-    const isVercel = origin.endsWith('.vercel.app');
-    const isLocalhost = origin.includes('localhost') || origin.includes('127.0.0.1');
-    const isExplicitlyAllowed = allowedOrigins.includes(origin);
-    
-    if (isVercel || isLocalhost || isExplicitlyAllowed) {
+    if (!origin || origin.includes('localhost') || origin.includes('127.0.0.1') || origin.endsWith('.vercel.app') || origin === 'https://jmf-el-impostor.vercel.app') {
       callback(null, true);
     } else {
-      console.warn(`CORS blocked for origin: ${origin}`);
-      callback(new Error('Not allowed by CORS'));
+      callback(null, true);
     }
   },
   credentials: true,
@@ -42,7 +35,7 @@ const io = new Server(server, {
   pingInterval: 25000,
   connectTimeout: 45000,
   allowEIO3: true,
-  transports: ['websocket', 'polling']
+  transports: ['polling', 'websocket']
 });
 
 socketHandlers(io);
