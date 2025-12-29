@@ -15,6 +15,7 @@ class RoomService {
         category: null,
         impostorId: null,
         leaderId: null,
+        startingPlayerId: null,
         votes: {},
         scores: {},
       });
@@ -79,6 +80,10 @@ class RoomService {
       p.status = 'playing';
     });
     room.impostorId = room.players[impostorIndex].id;
+    
+    const startingPlayerIndex = Math.floor(Math.random() * room.players.length);
+    room.startingPlayerId = room.players[startingPlayerIndex].id;
+
     room.votes = {};
 
     return room;
@@ -158,6 +163,7 @@ class RoomService {
         room.secretWord = null;
         room.category = null;
         room.impostorId = null;
+        room.startingPlayerId = null;
         room.votes = {};
         
         return { roomId, room };
