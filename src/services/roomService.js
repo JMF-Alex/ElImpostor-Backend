@@ -24,6 +24,11 @@ class RoomService {
 
   addPlayer(roomId, player) {
     const room = this.getRoom(roomId);
+    
+    if (room.players.some(p => p.name.toLowerCase() === player.name.toLowerCase())) {
+        return { error: 'NAME_ALREADY_EXISTS' };
+    }
+
     player.status = 'lobby';
     room.players.push(player);
     
@@ -148,16 +153,13 @@ class RoomService {
     for (const [roomId, room] of this.rooms.entries()) {
       const player = room.players.find(p => p.id === socketId);
       if (player) {
-        player.status = 'lobby';
+        room.players.forEach(p => p.status = 'lobby');
+        room.gameState = 'lobby';
+        room.secretWord = null;
+        room.category = null;
+        room.impostorId = null;
+        room.votes = {};
         
-        const everyoneBack = room.players.every(p => p.status === 'lobby');
-        if (everyoneBack) {
-          room.gameState = 'lobby';
-          room.secretWord = null;
-          room.category = null;
-          room.impostorId = null;
-          room.votes = {};
-        }
         return { roomId, room };
       }
     }

@@ -5,7 +5,6 @@ module.exports = (io) => {
     console.log(`User connected: ${socket.id}`);
 
     socket.on('join_room', ({ roomId, playerName }) => {
-      socket.join(roomId);
       const player = {
         id: socket.id,
         name: playerName,
@@ -13,6 +12,13 @@ module.exports = (io) => {
         isAlive: true,
       };
       const room = roomService.addPlayer(roomId, player);
+      
+      if (room.error) {
+        socket.emit('join_error', { message: room.error });
+        return;
+      }
+
+      socket.join(roomId);
       io.to(roomId).emit('room_update', room);
     });
 
