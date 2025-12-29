@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Animales",
+    "words": ["Elefante", "Delfín", "Canguro", "Águila", "León", "Pingüino", "Tortuga"]
+  },
+  {
+    "category": "Lugares",
+    "words": ["Torre Eiffel", "Amazonas", "Pirámides", "Roma", "Venezia", "Tokio"]
+  },
+  {
+    "category": "Comida",
+    "words": ["Pizza", "Sushi", "Hamburguesa", "Taco", "Paella", "Ramen"]
+  },
+  {
+    "category": "Objetos",
+    "words": ["Telescopio", "Reloj de Arena", "Guitarra", "Brújula", "Cámara"]
+  }
+]
