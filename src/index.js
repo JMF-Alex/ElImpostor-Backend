@@ -16,16 +16,20 @@ const corsOptions = {
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
     
-    const isAllowed = allowedOrigins.indexOf(origin) !== -1 || origin.endsWith('.vercel.app');
+    const isVercel = origin.endsWith('.vercel.app');
+    const isLocalhost = origin.includes('localhost') || origin.includes('127.0.0.1');
+    const isExplicitlyAllowed = allowedOrigins.includes(origin);
     
-    if (isAllowed) {
+    if (isVercel || isLocalhost || isExplicitlyAllowed) {
       callback(null, true);
     } else {
+      console.warn(`CORS blocked for origin: ${origin}`);
       callback(new Error('Not allowed by CORS'));
     }
   },
   credentials: true,
-  methods: ['GET', 'POST', 'OPTIONS']
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 };
 
 const app = express();
@@ -36,7 +40,9 @@ const io = new Server(server, {
   cors: corsOptions,
   pingTimeout: 60000,
   pingInterval: 25000,
-  transports: ['polling', 'websocket']
+  connectTimeout: 45000,
+  allowEIO3: true,
+  transports: ['websocket', 'polling']
 });
 
 socketHandlers(io);
