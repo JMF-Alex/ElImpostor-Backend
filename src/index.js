@@ -12,26 +12,32 @@ const allowedOrigins = [
   'http://localhost:3000'
 ];
 
-const app = express();
-app.use(cors({
+const corsOptions = {
   origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) !== -1 || origin.endsWith('.vercel.app')) {
+    
+    const isAllowed = allowedOrigins.indexOf(origin) !== -1 || origin.endsWith('.vercel.app');
+    
+    if (isAllowed) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
     }
   },
-  credentials: true
-}));
+  credentials: true,
+  methods: ['GET', 'POST', 'OPTIONS']
+};
+
+const app = express();
+app.use(cors(corsOptions));
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: {
-    origin: allowedOrigins,
-    methods: ['GET', 'POST'],
-    credentials: true
-  },
+  cors: corsOptions,
+  pingTimeout: 60000,
+  pingInterval: 25000,
+  transports: ['polling', 'websocket']
 });
 
 socketHandlers(io);
