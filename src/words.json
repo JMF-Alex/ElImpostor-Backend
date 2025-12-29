@@ -1,18 +1,82 @@
 [
   {
     "category": "Animales",
-    "words": ["Elefante", "Delfín", "Canguro", "Águila", "León", "Pingüino", "Tortuga"]
+    "words": ["Elefante", "Delfín", "Canguro", "Águila", "León", "Pingüino", "Tortuga", "Ornitorrinco", "Ajolote", "Narval", "Camaleón", "Suricata", "Perezoso", "Koala", "Lobo", "Tigre", "Jirafa", "Hipopótamo", "Cebra", "Panda"]
   },
   {
     "category": "Lugares",
-    "words": ["Torre Eiffel", "Amazonas", "Pirámides", "Roma", "Venezia", "Tokio"]
+    "words": ["Torre Eiffel", "Amazonas", "Pirámides de Giza", "Roma", "Venecia", "Tokio", "Machu Picchu", "Gran Cañón", "Muralla China", "Taj Mahal", "Antártida", "Chernobyl", "Monte Everest", "Cataratas del Iguazú", "Petra", "Stonehenge", "Coliseo Romano", "La Meca", "Vaticano", "Triángulo de las Bermudas"]
   },
   {
     "category": "Comida",
-    "words": ["Pizza", "Sushi", "Hamburguesa", "Taco", "Paella", "Ramen"]
+    "words": ["Pizza", "Sushi", "Hamburguesa", "Taco", "Paella", "Ramen", "Lasagna", "Croissant", "Falafel", "Ceviche", "Tiramisú", "Mochi", "Kimchi", "Asado", "Curry", "Enchiladas", "Fondue", "Burrito", "Churros", "Empanada"]
   },
   {
     "category": "Objetos",
-    "words": ["Telescopio", "Reloj de Arena", "Guitarra", "Brújula", "Cámara"]
+    "words": ["Telescopio", "Reloj de Arena", "Guitarra", "Brújula", "Cámara", "Microscopio", "Dron", "Vinilo", "Máquina de Escribir", "Katana", "Boomerang", "Caleidoscopio", "Sextante", "Periscopio", "Gramófono", "Metrónomo", "Prismáticos", "Yoyó", "Bumerán", "Canica"]
+  },
+  {
+    "category": "Cine",
+    "words": ["Titanic", "El Padrino", "Star Wars", "Harry Potter", "Avatar", "Jurassic Park", "Matrix", "El Señor de los Anillos", "Pulp Fiction", "Forrest Gump", "El Rey León", "Volver al Futuro", "Gladiador", "Coco", "Shrek", "Tiburón", "Psicosis", "Casablanca", "La La Land", "Interstellar"]
+  },
+  {
+    "category": "Superhéroes",
+    "words": ["Batman", "Spider-Man", "Wonder Woman", "Iron Man", "Thor", "Hulk", "Superman", "Black Panther", "Flash", "Doctor Strange", "Capitán América", "Viuda Negra", "Aquaman", "Lobezno", "Deadpool", "Linterna Verde", "Daredevil", "Cyborg", "Robin", "Groot"]
+  },
+  {
+    "category": "Instrumentos Musicales",
+    "words": ["Violín", "Saxofón", "Piano", "Batería", "Arpa", "Acordeón", "Trompeta", "Ukelele", "Oboe", "Violonchelo", "Clarinete", "Flauta", "Gaita", "Maracas", "Xilófono", "Trombón", "Bajo Eléctrico", "Sitar", "Tuba", "Banjo"]
+  },
+  {
+    "category": "Ciencia",
+    "words": ["Oxígeno", "Agujero Negro", "Átomo", "Gravedad", "ADN", "Microscopio", "Telescopio", "Robot", "Volcán", "Terremoto", "Fósil", "Galaxia", "Laboratorio", "Bacteria", "Neurona", "Imán", "Energía Solar", "Clonación", "Meteorito", "Láser"]
+  },
+  {
+    "category": "Cuerpo Humano",
+    "words": ["Cerebro", "Corazón", "Estómago", "Pulmón", "Hígado", "Fémur", "Neurona", "Riñón", "Páncreas", "Retina", "Esqueleto", "Músculo", "Sangre", "Piel", "Diente", "Lengua", "Oído", "Columna Vertebral", "Cráneo", "Intestino"]
+  },
+  {
+    "category": "Profesiones",
+    "words": ["Arquitecto", "Cirujano", "Bombero", "Astronauta", "Arqueólogo", "Juez", "Programador", "Piloto", "Detective", "Psicólogo", "Chef", "Militar", "Periodista", "Veterinario", "Científico", "Electricista", "Fontanero", "Mago", "Payaso", "Escritor"]
+  },
+  {
+    "category": "Deportes",
+    "words": ["Fútbol", "Baloncesto", "Tenis", "Natación", "Voleibol", "Rugby", "Golf", "Boxeo", "Judo", "Ciclismo", "Atletismo", "Esgrima", "Surf", "Esquí", "Snowboard", "Béisbol", "Hockey", "Karate", "Gimnasia", "Escalada"]
+  },
+  {
+    "category": "Personajes Históricos",
+    "words": ["Albert Einstein", "Cleopatra", "Napoleón Bonaparte", "Leonardo da Vinci", "Mahatma Gandhi", "Isaac Newton", "Wolfgang Amadeus Mozart", "William Shakespeare", "Nikola Tesla", "Ludwig van Beethoven", "Cristóbal Colón", "Nelson Mandela", "Marie Curie", "Charles Darwin", "Frida Kahlo", "Julio César", "Alejandro Magno", "Vincent van Gogh", "Elvis Presley", "Marilyn Monroe"]
+  },
+  {
+    "category": "Videojuegos",
+    "words": ["Mario Bros", "Minecraft", "Zelda", "Fortnite", "Tetris", "Pac-Man", "League of Legends", "Among Us", "Call of Duty", "Pokemon", "Sonic", "Grand Theft Auto", "Final Fantasy", "Overwatch", "Street Fighter", "Sims", "Roblox", "Halo", "FIFA", "Angry Birds"]
+  },
+  {
+    "category": "Transporte",
+    "words": ["Avión", "Barco", "Tren", "Coche", "Bicicleta", "Helicóptero", "Submarino", "Globo Aerostático", "Moto", "Autobús", "Camión", "Tranvía", "Metro", "Monopatín", "Patines", "Cohete", "Trineo", "Velero", "Taxi", "Canoa"]
+  },
+  {
+    "category": "Ropa",
+    "words": ["Camiseta", "Pantalón", "Vestido", "Falda", "Zapatos", "Sombrero", "Bufanda", "Guantes", "Calcetines", "Abrigo", "Chaqueta", "Cinturón", "Corbata", "Bañador", "Pijama", "Zapatillas", "Gorra", "Gafas de Sol", "Reloj", "Bolso"]
+  },
+  {
+    "category": "Emociones",
+    "words": ["Alegría", "Tristeza", "Ira", "Miedo", "Sorpresa", "Asco", "Nostalgia", "Euforia", "Ansiedad", "Calma", "Celos", "Orgullo", "Vergüenza", "Esperanza", "Culpa", "Aburrimiento", "Entusiasmo", "Frustración", "Gratitud", "Soledad"]
+  },
+  {
+    "category": "Emociones Complejas",
+    "words": ["Melancolía", "Empatía", "Resiliencia", "Procrastinación", "Serendipia", "Epifanía", "Limerencia", "Sonder", "Hygge", "Saudade", "Wanderlust", "Déjà vu", "Schadenfreude", "Catarsis", "Apatía", "Desidia", "Euforia", "Paranoia", "Histeria", "Zen"]
+  },
+  {
+    "category": "Fortnite",
+    "words": ["SCAR", "Escopeta de Corredera", "Poción de Escudo", "Salpicón Saludable", "Llama", "Autobús de Batalla", "Pico", "Construcción", "Pisos Picados", "La Tormenta", "Bidón de Plasma", "Lanzacohetes", "Trampa", "Delta", "Skin", "Pase de Batalla", "V-Bucks", "Victoria Magistral", "Grieta", "Cofre"]
+  },
+  {
+    "category": "Counter Strike",
+    "words": ["AWP", "AK-47", "M4A4", "Desert Eagle", "C4", "Dust II", "Terrorista", "Antiterrorista", "Granada Cegadora", "Kit de Desactivación", "Mirage", "Inferno", "Headshot", "Rush B", "Smoke", "Molotov", "Chaleco Kevlar", "Zeus x27", "Glock-18", "USP-S"]
+  },
+  {
+    "category": "Minecraft",
+    "words": ["Creeper", "Diamante", "Nether", "Ender Dragon", "Mesa de Crafteo", "Pico de Hierro", "Aldeano", "Redstone", "Obsidiana", "Portal al End", "Espada de Diamante", "Zombie", "Esqueleto", "Enderman", "Cama", "TNT", "Poción", "Encantamiento", "Bioma", "Steve"]
   }
 ]
