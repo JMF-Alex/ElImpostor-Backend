@@ -7,7 +7,7 @@ const socketHandlers = require('./socket/handlers');
 
 const app = express();
 app.use(cors({
-  origin: true, // Refleja el origen de la petición
+  origin: true,
   credentials: true
 }));
 
