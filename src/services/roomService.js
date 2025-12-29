@@ -14,6 +14,7 @@ class RoomService {
         secretWord: null,
         category: null,
         impostorId: null,
+        leaderId: null,
         votes: {},
         scores: {},
       });
@@ -25,6 +26,11 @@ class RoomService {
     const room = this.getRoom(roomId);
     player.status = 'lobby';
     room.players.push(player);
+    
+    if (!room.leaderId) {
+      room.leaderId = player.id;
+    }
+
     if (!room.scores[player.id]) {
         room.scores[player.id] = 0;
     }
@@ -41,6 +47,11 @@ class RoomService {
           this.rooms.delete(roomId);
           return null;
         }
+
+        if (room.leaderId === socketId) {
+          room.leaderId = room.players[0].id;
+        }
+
         return { roomId, room };
       }
     }
@@ -71,6 +82,8 @@ class RoomService {
   castVote(roomId, voterId, targetId) {
     const room = this.rooms.get(roomId);
     if (!room) return null;
+
+    if (voterId === targetId) return { error: 'Self-voting not allowed' };
 
     if (targetId === null) {
       delete room.votes[voterId];
@@ -147,6 +160,18 @@ class RoomService {
         }
         return { roomId, room };
       }
+    }
+    return null;
+  }
+
+  kickPlayer(roomId, leaderId, targetId) {
+    const room = this.rooms.get(roomId);
+    if (!room || room.leaderId !== leaderId) return null;
+
+    const index = room.players.findIndex(p => p.id === targetId);
+    if (index !== -1) {
+      room.players.splice(index, 1);
+      return { roomId, room, kickedId: targetId };
     }
     return null;
   }

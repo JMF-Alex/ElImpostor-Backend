@@ -26,6 +26,10 @@ module.exports = (io) => {
     socket.on('cast_vote', ({ roomId, targetId }) => {
       const result = roomService.castVote(roomId, socket.id, targetId);
       
+      if (result?.error) {
+        return;
+      }
+
       if (result?.tie) {
         io.to(roomId).emit('vote_tie');
         const room = roomService.getRoom(roomId);
@@ -36,7 +40,17 @@ module.exports = (io) => {
         const room = roomService.getRoom(roomId);
         io.to(roomId).emit('room_update', room);
       } else {
+        const room = roomService.getRoom(roomId);
+        io.to(roomId).emit('room_update', room);
         io.to(roomId).emit('vote_cast', { voterId: socket.id });
+      }
+    });
+
+    socket.on('kick_player', ({ roomId, targetId }) => {
+      const result = roomService.kickPlayer(roomId, socket.id, targetId);
+      if (result) {
+        io.to(result.roomId).emit('room_update', result.room);
+        io.to(result.kickedId).emit('kicked');
       }
     });
 
