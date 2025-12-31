@@ -71,8 +71,10 @@ class RoomService {
     room.gameState = 'playing';
     
     const categoryObj = wordsData[Math.floor(Math.random() * wordsData.length)];
+    const wordObj = categoryObj.words[Math.floor(Math.random() * categoryObj.words.length)];
+    
     room.category = categoryObj.category;
-    room.secretWord = categoryObj.words[Math.floor(Math.random() * categoryObj.words.length)];
+    room.secretWord = wordObj.word;
     
     const impostorIndex = Math.floor(Math.random() * room.players.length);
     room.players.forEach((p, index) => {
@@ -83,6 +85,8 @@ class RoomService {
     
     const startingPlayerIndex = Math.floor(Math.random() * room.players.length);
     room.startingPlayerId = room.players[startingPlayerIndex].id;
+
+    room.impostorHint = (room.impostorId === room.startingPlayerId) ? wordObj.hint : null;
 
     room.votes = {};
 

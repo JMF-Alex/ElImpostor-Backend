@@ -1,82 +1,150 @@
 [
   {
-    "category": "Animales",
-    "words": ["Elefante", "Delfín", "Canguro", "Águila", "León", "Pingüino", "Tortuga", "Ornitorrinco", "Ajolote", "Narval", "Camaleón", "Suricata", "Perezoso", "Koala", "Lobo", "Tigre", "Jirafa", "Hipopótamo", "Cebra", "Panda"]
+    "category": "Mamíferos Terrestres",
+    "words": [
+      { "word": "Elefante", "hint": "Es un animal muy grande" },
+      { "word": "León", "hint": "Es un depredador muy conocido" },
+      { "word": "Canguro", "hint": "Es típico de Oceanía" },
+      { "word": "Jirafa", "hint": "Destaca por su altura" },
+      { "word": "Tigre", "hint": "Es un felino salvaje" },
+      { "word": "Rinoceronte", "hint": "Tiene un aspecto muy robusto" },
+      { "word": "Cebra", "hint": "Es un animal africano muy reconocible" },
+      { "word": "Oso Panda", "hint": "Es un animal muy popular y tranquilo" },
+      { "word": "Gorila", "hint": "Es uno de los primates más grandes" },
+      { "word": "Lobo", "hint": "Vive y caza en grupo" }
+    ]
   },
   {
-    "category": "Lugares",
-    "words": ["Torre Eiffel", "Amazonas", "Pirámides de Giza", "Roma", "Venecia", "Tokio", "Machu Picchu", "Gran Cañón", "Muralla China", "Taj Mahal", "Antártida", "Chernobyl", "Monte Everest", "Cataratas del Iguazú", "Petra", "Stonehenge", "Coliseo Romano", "La Meca", "Vaticano", "Triángulo de las Bermudas"]
+    "category": "Vida Marina",
+    "words": [
+      { "word": "Delfín", "hint": "Es un animal marino muy sociable" },
+      { "word": "Ballena Azul", "hint": "Destaca por su enorme tamaño" },
+      { "word": "Tiburón Blanco", "hint": "Es un gran cazador del océano" },
+      { "word": "Pulpo", "hint": "Es un invertebrado marino muy curioso" },
+      { "word": "Caballito de Mar", "hint": "Tiene una forma poco común" },
+      { "word": "Medusa", "hint": "Se desplaza flotando en el agua" },
+      { "word": "Orca", "hint": "Es un mamífero marino muy poderoso" },
+      { "word": "Tortuga Marina", "hint": "Puede vivir muchos años" },
+      { "word": "Narval", "hint": "Es un animal poco habitual del océano" },
+      { "word": "Raya", "hint": "Se mueve cerca del fondo marino" }
+    ]
   },
   {
-    "category": "Comida",
-    "words": ["Pizza", "Sushi", "Hamburguesa", "Taco", "Paella", "Ramen", "Lasagna", "Croissant", "Falafel", "Ceviche", "Tiramisú", "Mochi", "Kimchi", "Asado", "Curry", "Enchiladas", "Fondue", "Burrito", "Churros", "Empanada"]
+    "category": "Aves",
+    "words": [
+      { "word": "Águila", "hint": "Es un ave asociada a la fuerza" },
+      { "word": "Pingüino", "hint": "Vive en zonas muy frías" },
+      { "word": "Avestruz", "hint": "Es un ave de gran tamaño" },
+      { "word": "Colibrí", "hint": "Es un ave muy pequeña" },
+      { "word": "Búho", "hint": "Está activo principalmente de noche" },
+      { "word": "Flamenco", "hint": "Es un ave muy llamativa" },
+      { "word": "Tucán", "hint": "Es un ave tropical" },
+      { "word": "Loro", "hint": "Es un ave muy inteligente" },
+      { "word": "Pavo Real", "hint": "Es conocido por su apariencia" },
+      { "word": "Cisne", "hint": "Se asocia con elegancia" }
+    ]
   },
   {
-    "category": "Objetos",
-    "words": ["Telescopio", "Reloj de Arena", "Guitarra", "Brújula", "Cámara", "Microscopio", "Dron", "Vinilo", "Máquina de Escribir", "Katana", "Boomerang", "Caleidoscopio", "Sextante", "Periscopio", "Gramófono", "Metrónomo", "Prismáticos", "Yoyó", "Bumerán", "Canica"]
+    "category": "Monumentos del Mundo",
+    "words": [
+      { "word": "Torre Eiffel", "hint": "Es un símbolo europeo" },
+      { "word": "Estatua de la Libertad", "hint": "Representa un ideal muy conocido" },
+      { "word": "Gran Muralla China", "hint": "Es una construcción muy extensa" },
+      { "word": "Coliseo Romano", "hint": "Proviene de una civilización antigua" },
+      { "word": "Taj Mahal", "hint": "Es un monumento histórico muy famoso" },
+      { "word": "Machu Picchu", "hint": "Está en una zona montañosa" },
+      { "word": "Pirámides de Giza", "hint": "Tienen miles de años de historia" },
+      { "word": "Cristo Redentor", "hint": "Es una estatua de gran tamaño" },
+      { "word": "Big Ben", "hint": "Está relacionado con una gran ciudad" },
+      { "word": "Sagrada Familia", "hint": "Es una obra arquitectónica destacada" }
+    ]
   },
   {
-    "category": "Cine",
-    "words": ["Titanic", "El Padrino", "Star Wars", "Harry Potter", "Avatar", "Jurassic Park", "Matrix", "El Señor de los Anillos", "Pulp Fiction", "Forrest Gump", "El Rey León", "Volver al Futuro", "Gladiador", "Coco", "Shrek", "Tiburón", "Psicosis", "Casablanca", "La La Land", "Interstellar"]
+    "category": "Comida Italiana",
+    "words": [
+      { "word": "Pizza", "hint": "Es uno de los platos más famosos del mundo" },
+      { "word": "Lasagna", "hint": "Es un plato tradicional al horno" },
+      { "word": "Espaguetis", "hint": "Es un tipo de pasta muy común" },
+      { "word": "Risotto", "hint": "Es un plato típico a base de arroz" },
+      { "word": "Tiramisú", "hint": "Es un postre muy popular" },
+      { "word": "Gelato", "hint": "Es un dulce muy consumido" },
+      { "word": "Bruschetta", "hint": "Se suele servir como entrante" },
+      { "word": "Focaccia", "hint": "Es un tipo de pan tradicional" },
+      { "word": "Ravioli", "hint": "Es una pasta rellena" },
+      { "word": "Gnocchi", "hint": "Es una pasta diferente a la habitual" }
+    ]
   },
   {
-    "category": "Superhéroes",
-    "words": ["Batman", "Spider-Man", "Wonder Woman", "Iron Man", "Thor", "Hulk", "Superman", "Black Panther", "Flash", "Doctor Strange", "Capitán América", "Viuda Negra", "Aquaman", "Lobezno", "Deadpool", "Linterna Verde", "Daredevil", "Cyborg", "Robin", "Groot"]
+    "category": "Objetos de Escritorio",
+    "words": [
+      { "word": "Grapadora", "hint": "Se usa en oficinas o colegios" },
+      { "word": "Calculadora", "hint": "Ayuda con números" },
+      { "word": "Bolígrafo", "hint": "Es muy común para escribir" },
+      { "word": "Sacapuntas", "hint": "Se usa con lápices" },
+      { "word": "Regla", "hint": "Sirve para trabajos de medición" },
+      { "word": "Pegamento en barra", "hint": "Se usa para manualidades" },
+      { "word": "Resaltador", "hint": "Ayuda a marcar información" },
+      { "word": "Clip", "hint": "Mantiene cosas juntas" },
+      { "word": "Tijeras", "hint": "Herramienta muy habitual" },
+      { "word": "Goma de borrar", "hint": "Se usa para corregir" }
+    ]
   },
   {
-    "category": "Instrumentos Musicales",
-    "words": ["Violín", "Saxofón", "Piano", "Batería", "Arpa", "Acordeón", "Trompeta", "Ukelele", "Oboe", "Violonchelo", "Clarinete", "Flauta", "Gaita", "Maracas", "Xilófono", "Trombón", "Bajo Eléctrico", "Sitar", "Tuba", "Banjo"]
+    "category": "Instrumentos de Cuerda",
+    "words": [
+      { "word": "Violín", "hint": "Se utiliza en música clásica" },
+      { "word": "Guitarra", "hint": "Es muy popular en muchos estilos" },
+      { "word": "Arpa", "hint": "Es un instrumento muy antiguo" },
+      { "word": "Violonchelo", "hint": "Se toca sentado" },
+      { "word": "Ukelele", "hint": "Es un instrumento pequeño" },
+      { "word": "Contrabajo", "hint": "Produce sonidos muy graves" },
+      { "word": "Bajo Eléctrico", "hint": "Es clave en bandas musicales" },
+      { "word": "Mandolina", "hint": "Es menos común hoy en día" },
+      { "word": "Sitar", "hint": "Pertenece a una cultura musical específica" },
+      { "word": "Banjo", "hint": "Se asocia a ciertos géneros musicales" }
+    ]
   },
   {
-    "category": "Ciencia",
-    "words": ["Oxígeno", "Agujero Negro", "Átomo", "Gravedad", "ADN", "Microscopio", "Telescopio", "Robot", "Volcán", "Terremoto", "Fósil", "Galaxia", "Laboratorio", "Bacteria", "Neurona", "Imán", "Energía Solar", "Clonación", "Meteorito", "Láser"]
+    "category": "Planetas del Sistema Solar",
+    "words": [
+      { "word": "Mercurio", "hint": "Es un planeta pequeño" },
+      { "word": "Venus", "hint": "Tiene condiciones extremas" },
+      { "word": "Tierra", "hint": "Tiene agua en su superficie" },
+      { "word": "Marte", "hint": "Es objeto de muchas investigaciones" },
+      { "word": "Júpiter", "hint": "Es un gigante del sistema" },
+      { "word": "Saturno", "hint": "Tiene una apariencia muy característica" },
+      { "word": "Urano", "hint": "Es poco visible a simple vista" },
+      { "word": "Neptuno", "hint": "Se encuentra muy lejos" }
+    ]
   },
   {
-    "category": "Cuerpo Humano",
-    "words": ["Cerebro", "Corazón", "Estómago", "Pulmón", "Hígado", "Fémur", "Neurona", "Riñón", "Páncreas", "Retina", "Esqueleto", "Músculo", "Sangre", "Piel", "Diente", "Lengua", "Oído", "Columna Vertebral", "Cráneo", "Intestino"]
+    "category": "Profesiones Médicas",
+    "words": [
+      { "word": "Cirujano", "hint": "Realiza procedimientos complejos" },
+      { "word": "Pediatra", "hint": "Trabaja con pacientes jóvenes" },
+      { "word": "Odontólogo", "hint": "Trata una parte concreta del cuerpo" },
+      { "word": "Cardiólogo", "hint": "Especialista en un órgano vital" },
+      { "word": "Enfermero", "hint": "Forma parte del personal sanitario" },
+      { "word": "Veterinario", "hint": "Atiende a seres vivos no humanos" },
+      { "word": "Psiquiatra", "hint": "Trabaja con la salud mental" },
+      { "word": "Dermatólogo", "hint": "Especialista en una parte externa del cuerpo" },
+      { "word": "Oftalmólogo", "hint": "Se centra en un sentido" },
+      { "word": "Radiólogo", "hint": "Trabaja con imágenes médicas" }
+    ]
   },
   {
-    "category": "Profesiones",
-    "words": ["Arquitecto", "Cirujano", "Bombero", "Astronauta", "Arqueólogo", "Juez", "Programador", "Piloto", "Detective", "Psicólogo", "Chef", "Militar", "Periodista", "Veterinario", "Científico", "Electricista", "Fontanero", "Mago", "Payaso", "Escritor"]
-  },
-  {
-    "category": "Deportes",
-    "words": ["Fútbol", "Baloncesto", "Tenis", "Natación", "Voleibol", "Rugby", "Golf", "Boxeo", "Judo", "Ciclismo", "Atletismo", "Esgrima", "Surf", "Esquí", "Snowboard", "Béisbol", "Hockey", "Karate", "Gimnasia", "Escalada"]
-  },
-  {
-    "category": "Personajes Históricos",
-    "words": ["Albert Einstein", "Cleopatra", "Napoleón Bonaparte", "Leonardo da Vinci", "Mahatma Gandhi", "Isaac Newton", "Wolfgang Amadeus Mozart", "William Shakespeare", "Nikola Tesla", "Ludwig van Beethoven", "Cristóbal Colón", "Nelson Mandela", "Marie Curie", "Charles Darwin", "Frida Kahlo", "Julio César", "Alejandro Magno", "Vincent van Gogh", "Elvis Presley", "Marilyn Monroe"]
-  },
-  {
-    "category": "Videojuegos",
-    "words": ["Mario Bros", "Minecraft", "Zelda", "Fortnite", "Tetris", "Pac-Man", "League of Legends", "Among Us", "Call of Duty", "Pokemon", "Sonic", "Grand Theft Auto", "Final Fantasy", "Overwatch", "Street Fighter", "Sims", "Roblox", "Halo", "FIFA", "Angry Birds"]
-  },
-  {
-    "category": "Transporte",
-    "words": ["Avión", "Barco", "Tren", "Coche", "Bicicleta", "Helicóptero", "Submarino", "Globo Aerostático", "Moto", "Autobús", "Camión", "Tranvía", "Metro", "Monopatín", "Patines", "Cohete", "Trineo", "Velero", "Taxi", "Canoa"]
-  },
-  {
-    "category": "Ropa",
-    "words": ["Camiseta", "Pantalón", "Vestido", "Falda", "Zapatos", "Sombrero", "Bufanda", "Guantes", "Calcetines", "Abrigo", "Chaqueta", "Cinturón", "Corbata", "Bañador", "Pijama", "Zapatillas", "Gorra", "Gafas de Sol", "Reloj", "Bolso"]
-  },
-  {
-    "category": "Emociones",
-    "words": ["Alegría", "Tristeza", "Ira", "Miedo", "Sorpresa", "Asco", "Nostalgia", "Euforia", "Ansiedad", "Calma", "Celos", "Orgullo", "Vergüenza", "Esperanza", "Culpa", "Aburrimiento", "Entusiasmo", "Frustración", "Gratitud", "Soledad"]
-  },
-  {
-    "category": "Emociones Complejas",
-    "words": ["Melancolía", "Empatía", "Resiliencia", "Procrastinación", "Serendipia", "Epifanía", "Limerencia", "Sonder", "Hygge", "Saudade", "Wanderlust", "Déjà vu", "Schadenfreude", "Catarsis", "Apatía", "Desidia", "Euforia", "Paranoia", "Histeria", "Zen"]
-  },
-  {
-    "category": "Fortnite",
-    "words": ["SCAR", "Escopeta de Corredera", "Poción de Escudo", "Salpicón Saludable", "Llama", "Autobús de Batalla", "Pico", "Construcción", "Pisos Picados", "La Tormenta", "Bidón de Plasma", "Lanzacohetes", "Trampa", "Delta", "Skin", "Pase de Batalla", "V-Bucks", "Victoria Magistral", "Grieta", "Cofre"]
-  },
-  {
-    "category": "Counter Strike",
-    "words": ["AWP", "AK-47", "M4A4", "Desert Eagle", "C4", "Dust II", "Terrorista", "Antiterrorista", "Granada Cegadora", "Kit de Desactivación", "Mirage", "Inferno", "Headshot", "Rush B", "Smoke", "Molotov", "Chaleco Kevlar", "Zeus x27", "Glock-18", "USP-S"]
-  },
-  {
-    "category": "Minecraft",
-    "words": ["Creeper", "Diamante", "Nether", "Ender Dragon", "Mesa de Crafteo", "Pico de Hierro", "Aldeano", "Redstone", "Obsidiana", "Portal al End", "Espada de Diamante", "Zombie", "Esqueleto", "Enderman", "Cama", "TNT", "Poción", "Encantamiento", "Bioma", "Steve"]
+    "category": "Deportes de Pelota",
+    "words": [
+      { "word": "Fútbol", "hint": "Es un deporte muy popular" },
+      { "word": "Baloncesto", "hint": "Se juega en equipo" },
+      { "word": "Tenis", "hint": "Es un deporte individual o en pareja" },
+      { "word": "Voleibol", "hint": "Se juega dividido por una red" },
+      { "word": "Rugby", "hint": "Es un deporte muy físico" },
+      { "word": "Béisbol", "hint": "Es tradicional en algunos países" },
+      { "word": "Golf", "hint": "Se practica al aire libre" },
+      { "word": "Waterpolo", "hint": "Combina agua y equipo" },
+      { "word": "Ping Pong", "hint": "Se juega en mesa" },
+      { "word": "Balonmano", "hint": "Es un deporte rápido" }
+    ]
   }
 ]
